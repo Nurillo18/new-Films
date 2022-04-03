@@ -18,6 +18,7 @@ elSavedList.addEventListener("click", (ev) => {
         const svID = Number(ev.target.dataset.saveID);
         const findSvId = savedArr.findIndex(e => e.id == svID);
         savedArr.splice(findSvId,1);
+            //  window.localStorage.setItem("document" , JSON.stringify(films));
         rederSavedArr(savedArr,elSavedList)
     }
 });
